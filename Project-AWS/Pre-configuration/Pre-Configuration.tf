@@ -58,7 +58,7 @@ resource "aws_subnet" "VPC_Paris_Public_Subnet_3" {
 }
 
 
-#Création des Subnets privés (pas d'Ip publique + aucune route vers l'exterieur)
+#Création des Subnets privés
 resource "aws_subnet" "VPC_Paris_Private_Subnet_4" {
     availability_zone = "eu-west-3a"
     cidr_block = "10.0.4.0/24"
